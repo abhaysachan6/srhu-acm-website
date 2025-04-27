@@ -53,6 +53,26 @@
   
   .team-member { display: inline-block; margin: 20px; text-align: center; }
   .team-member img { width: 120px; height: 120px; border-radius: 50%; }
+
+  #events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .event-poster {
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .event-poster img {
+    width: 100%;
+    display: block;
+  }
   </style>
  </head>
 
@@ -82,6 +102,14 @@
 
  <section id="events">
   <h2>Events</h2>
+  <div id="events-container">
+    <div class="event-poster">
+      <img src="https://i.ibb.co/1bQ444n/algorithm-arena.jpg" alt="Algorithm Arena Poster">
+    </div>
+    <div class="event-poster">
+      <img src="https://i.ibb.co/9s80sFn/tech-quest-industry-insight-challenge.jpg" alt="Industry Insight Challenge Poster">
+    </div>
+  </div>
   <p><strong>Algorithm Arena</strong> - A thrilling coding competition challenging logic and programming skills.<br>
   <strong>Tech Quest – Industry Insight Challenge</strong> - A fusion of tech quizzes and logical coding tasks.</p>
  </section>
