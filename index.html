@@ -1,61 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Events - ACM Student Chapter</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link your CSS here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | ACM Student Chapter</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100%;
+    }
+    
+    header {
+      background-color: #011c48;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url('images/events_bg.jpeg'); /* Use your own background image here */
+      background-size: cover;
+      background-position: center;
+      height: calc(100vh - 70px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin: 10px 0 40px;
+    }
+
+    .register-button {
+      background-color: #ffc107;
+      color: black;
+      padding: 14px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .register-button:hover {
+      background-color: #e0a800;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
 </head>
+
 <body>
 
-    <header>
-        <div class="navbar">
-            <h1>ACM Student Chapter</h1>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#events">Events</a>
-                <a href="#sponsors">Sponsors</a>
-            </nav>
-        </div>
-    </header>
+<header>
+  <div class="logo">
+    <img src="images/acm_logo.png" alt="ACM Logo">
+    <span style="color:white; font-size:24px; font-weight:bold;">ACM Student Chapter</span>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="#sponsors">Sponsors</a>
+  </nav>
+</header>
 
-    <section id="events">
-        <h2>Events</h2>
-        <div class="event-cards">
-            <div class="card">
-                <img src="event1.jpg" alt="Event 1">
-                <h3>Code Nexus</h3>
-                <p>Bridging Realms, Mastering Challenges</p>
-            </div>
-            <div class="card">
-                <img src="event2.jpg" alt="Event 2">
-                <h3>Bits and Bids</h3>
-                <p>Small Bytes, Big Wins</p>
-            </div>
-            <div class="card">
-                <img src="event3.jpg" alt="Event 3">
-                <h3>Unearth Utopia</h3>
-                <p>Dare to Discover! Team Event</p>
-            </div>
-        </div>
-    </section>
+<section class="hero">
+  <h1>Events</h1>
+  <p>Where Innovation Meets Opportunity</p>
+  <a href="#register" class="register-button">Register Here</a>
+</section>
 
-    <section id="sponsors">
-        <h2>Our Sponsors</h2>
-        <div class="sponsor-logos">
-            <img src="sponsor1.png" alt="Sponsor 1">
-            <img src="sponsor2.png" alt="Sponsor 2">
-            <img src="sponsor3.png" alt="Sponsor 3">
-            <img src="sponsor4.png" alt="Sponsor 4">
-        </div>
-    </section>
-
-    <footer>
-        <p>©2024 Technical Team | All Rights Reserved</p>
-        <div class="social-icons">
-            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-        </div>
-    </footer>
+<footer>
+  <p>&copy; 2025 ACM Student Chapter | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
