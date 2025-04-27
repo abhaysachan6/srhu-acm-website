@@ -78,6 +78,16 @@
       width: 100%;
       display: block;
     }
+
+    /* Make event heading look like a clickable link */
+    .clickable-heading {
+      color: #004080;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .clickable-heading:hover {
+      color: #00264d;
+    }
   </style>
 </head>
 
@@ -106,18 +116,22 @@
 </section>
 
 <section id="events">
-  <h2>Events</h2>
+  <!-- Events heading wrapped inside a link -->
+  <h2>
+    <a class="clickable-heading" href="events.html">Events</a>
+  </h2>
+
   <div id="events-container">
 
     <div class="event-poster">
       <a href="algorithm-arena.html">
-        <img src=""C:\Users\ABHAY SACHAN\OneDrive\Documents\ACM\ACM EVENTS\Algorithm Arena (Tech Event)\Poster.jpeg"" alt="Algorithm Arena Poster">
+        <img src="images/algorithm_arena.jpeg" alt="Algorithm Arena Poster">
       </a>
     </div>
 
     <div class="event-poster">
       <a href="industry-insight-challenge.html">
-        <img src=""C:\Users\ABHAY SACHAN\OneDrive\Documents\ACM\ACM EVENTS\Industry Insight challenge\Poster.jpeg"" alt="Industry Insight Challenge Poster">
+        <img src="images/industry_insight.jpeg" alt="Industry Insight Challenge Poster">
       </a>
     </div>
 
